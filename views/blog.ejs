@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <title>Blog Section</title>
+</head>
+<body>
+  <!-- Navbar Section Start -->
+  <nav class="navbar navbar-expand-lg shadow">
+    <div class="container">
+      <div class="logo">
+        <img src="/img/logoimg.png" alt="logo" width="150px" height="50px">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars bars-incos"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar-btn">
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#talkform">Let's Talk</button>
+        </div>
+          <!-- support model start -->
+           <div class="modal fade" id="talkform" aria-labelledby="#talklabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered shadow">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="title" id="talklabel">Support <span class="text-danger">Team</span></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="/supportform" method="post">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username" name="username">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your Email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Your Subject" name="subject">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="yourname1" aria-describedby="emailHelp" placeholder="Your Name" name="yourname1">
+                    </div>
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="yournumber" aria-describedby="emailHelp" placeholder="Your Number" name="yournumber">
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="messagesupport" name="messagesupport" rows="5" placeholder="Leave A Comment Here...."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+           </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar Section End -->
+      <!-- bg section start -->
+      <section class="bg-main">
+    </section>
+ 
+   <!-- bg section End -->
+
+     <!-- Blog Section Start -->
+  <section class="blog-main py-4">
+    <div class="container">
+      <div class="text-center mb-2 mt-2">
+        <span class="text-primary">RECENT POSTS?</span>
+        <h2>Blog</h2>
+      </div>
+      <div class="row mt-1 g-5 justify-content-center">
+        <!-- Blog-1 -->
+        <div class="col-md-4 col-lg-4 blog-info">
+          <div class="card shadow">
+            <img src="/img/frontend.jpg" class="card-img-top" alt="blog-1">
+            <div class="card-body text-center bg-white">
+              <h5>Frontend Developer</h5>
+              <p>Learn how to build responsive user interfaces using HTML, CSS, and JavaScript.</p>
+              <a href="blog" class="btn btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog-2 -->
+        <div class="col-md-4 col-lg-4 blog-info">
+          <div class="card shadow">
+            <img src="/img/blog 2.jpg" class="card-img-top" height="224px" alt="blog-2">
+            <div class="card-body text-center bg-white">
+              <h5>AI in Robotics</h5>
+              <p>"Explore how artificial intelligence is changing the future of robotics.</p>
+              <a href="blog" class="btn btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog-3 -->
+        <div class="col-md-4 col-lg-4 blog-info">
+          <div class="card shadow">
+            <img src="/img/blog 3.jpg" class="card-img-top" height="224px" alt="blog-3">
+            <div class="card-body text-center bg-white">
+              <h5>UI/UX Design Trends</h5>
+              <p>Discover the latest trends in user interface and user experience design.</p>
+              <a href="blog" class="btn btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BLog Section End -->
+
+            <!-- Contact Section Start -->
+            <section class="contact-main py-4 d-flex justify-content-center align-items-center">
+                <div class="container">
+                  <div class="row g-5">
+                    <div class="col-md-4 col-lg-4 contact-info-right text-white mt-5">
+                      <span class="text-danger my-3 ms-3">GET IN TOUCH WITH ME!</span>
+                          <div class="footer-info mt-3 d-flex align-items-center">
+                            <div class="icon-img">
+                              <img src="/img/map.gif" width="70px" height="70px" alt="map">
+                            </div>
+                            <div class="map-text ms-3 mt-3">
+                              <h5>Adress</h5>
+                              <p>Chandigarh, India</p>
+                            </div>
+                          </div>
+            
+                          <div class="footer-info mt-3 d-flex align-items-center">
+                            <div class="icon-img">
+                              <img src="/img/Call Phone 3D Animated Icon.gif" width="70px" height="70px" alt="map">
+                            </div>
+                            <div class="map-text ms-3 mt-3">
+                              <h5>Call Us</h5>
+                              <p>+9184844323</p>
+                            </div>
+                          </div>
+            
+                          <div class="footer-info mt-3 d-flex align-items-center">
+                            <div class="icon-img">
+                              <img src="img/Email Marketing 3D Animated Icon.gif" width="70px" height="70px" alt="map">
+                            </div>
+                            <div class="map-text ms-3 mt-3">
+                              <h5>Email Us</h5>
+                              <p>dhirendrabam12345@gmail.com</p>
+                            </div>
+                          </div>
+            
+            
+                    </div>
+                    <div class="col-md-4 col-lg-4 contact-info mt-3">
+                      <h3 class="mx-2 my-3">Contact Me</h3>
+                      <form action="/contact" method="post">
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="yourname" placeholder="Your Name" name="yourname">
+                        </div>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="subject" placeholder="Your Subject" name="yoursubject">
+                        </div>
+                        <div class="mb-3">
+                          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+                        </div>
+                        <div class="btn-form text-center">
+                          <button type="submit" class="btn btn-outline-danger text-white w-100">Send Message</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-4 col-lg-4 new-letter text-white">
+                      <div class="mb-2 mt-3 ms-2">
+                        <h4>Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, nesciunt. Iste omnis quo sunt voluptatum modi fugiat, corporis atque.</p>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email Address" aria-describedby="emailHelp">
+                        <div class="btn-letter text-center my-4">
+                          <button type="submit" class="btn btn-outline-danger text-white w-100">Subscribe</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+              <!-- Contact Section End -->
+            
+             <!-- Footer Section Start -->
+   <section class="footer-main py-4">
+    <div class="container">
+      <div class="social-media d-flex justify-content-center align-items-center gap-4">
+        <a href="https://www.facebook.com/people/Dhirendra-Bam-ThaQurii/pfbid0feKYKQNKnk8kEFRXKzCqqA7PFeFTurEy9A8oTjHiiHEYwqP6KypzzibkFNZJCjh9l/?mibextid=wwXIfr&rdid=fzR2epvmy5D9WvLB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19KjSvFU31%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/people/Dhirendra-Bam-ThaQurii/pfbid0feKYKQNKnk8kEFRXKzCqqA7PFeFTurEy9A8oTjHiiHEYwqP6KypzzibkFNZJCjh9l/?mibextid=wwXIfr&rdid=fzR2epvmy5D9WvLB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19KjSvFU31%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="https://www.linkedin.com/in/dhirendrabam001/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ig_dhirendra01/?igsh=bWU2bGkxYXY2Ymh3&utm_source=qr#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/dhirendrabam001" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="tel:+916284844323" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="mb-0 text-center my-3 mt-5 fs-5 text-dark">&copy; 2025 Dhirendra Bam. All rights reserved.</p>
+      <p class="text-center my-2 text-danger">Thank You For Visiting Me.</p>
+
+    </div>
+   </section>
+
+  <!-- Footer Section End -->
+    
+
+
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <!-- Typing cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scrollrevel cdn -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+      integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
