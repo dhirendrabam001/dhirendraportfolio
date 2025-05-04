@@ -19,7 +19,7 @@ app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "./views"));
 
 // Link CSS
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 //Link Boostrap 5
 app.use("/css", express.static(path.join(__dirname, "node_modules", "bootstrap", "dist", "css")))
@@ -158,23 +158,32 @@ app.post("/supportform", async (req,res) => {
 
 
 
-app.listen(port, ()=> {
-    console.log(`Server is running at:${port}`);
-})
+// app.listen(port, ()=> {
+//     console.log(`Server is running at:${port}`);
+// })
 
 
-// [All your existing middleware and route code remains the same...]
+// module.exports = app;
 
-// At the VERY END of your file:
-module.exports = app;  // Required for Vercel
+// if (require.main === module) {
+//     app.listen(port, () => {
+//         console.log(`Server is running at:${port}`);
+//     });
+// }
 
-// Only start server when running locally
+
+// [Keep all your existing middleware and routes...]
+
+
+
+// Only start server locally (not on Vercel)
 if (require.main === module) {
-    app.listen(port, () => {
-        console.log(`Server is running at:${port}`);
-    });
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => console.log(`Local server running on ${PORT}`));
 }
 
+// ▼▼▼ Add this at the VERY END ▼▼▼
+module.exports = app; // Critical for Vercel
 
 
 
