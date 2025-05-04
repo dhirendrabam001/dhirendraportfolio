@@ -6,6 +6,9 @@ require("./config/connnection"); // Require MongooseDb
 const {User, Contact, Customer} = require("./models/user"); // Require Model
 const bcrypt = require("bcrypt");
 
+
+
+
 // Define Port 5000
 const port = process.env.port || 5000;
 // const host = "172.20.10.4";
