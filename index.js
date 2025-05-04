@@ -163,5 +163,18 @@ app.listen(port, ()=> {
 })
 
 
+// [All your existing middleware and route code remains the same...]
+
+// At the VERY END of your file:
+module.exports = app;  // Required for Vercel
+
+// Only start server when running locally
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server is running at:${port}`);
+    });
+}
+
+
 
 
