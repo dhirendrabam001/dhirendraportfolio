@@ -30,11 +30,13 @@ app.use("/css", express.static(path.join(__dirname, "node_modules", "bootstrap",
 app.use("/js", express.static(path.join(__dirname, "node_modules", "bootstrap", "dist", "js")));
 
 
+// login section hide //
+
+// app.get("/", (req,res) => {
+//     res.render("login")
+// })
 
 app.get("/", (req,res) => {
-    res.render("login")
-})
-app.get("/index", (req,res) => {
     res.render("index")
 });
 
@@ -64,63 +66,63 @@ app.get("/contact", (req,res) => {
 
 
 // Registr Post
-app.post("/register", async (req,res) => {
-    try {
+// app.post("/register", async (req,res) => {
+//     try {
         // name value most"" username password email cpassword 
-        const {username, email, password, cpassword} = req.body;
+        // const {username, email, password, cpassword} = req.body;
         // check when empty field check
-        if(!username || !email || !password) {
-            return res.send("All field are required")
-        }
+        // if(!username || !email || !password) {
+        //     return res.send("All field are required")
+        // }
     
         // Check if email already exits
-        const existingUser = await User.findOne({email});
-        if(existingUser) {
-            return res.send("Email Already Exit")
-        }
+        // const existingUser = await User.findOne({email});
+        // if(existingUser) {
+        //     return res.send("Email Already Exit")
+        // }
         // Hash password before saving
 
-        const hasheedPassword = await bcrypt.hash(password,10);
+        // const hasheedPassword = await bcrypt.hash(password,10);
 
         // Create New User
-        const user = new User({
-            username,
-            email,
-            password: hasheedPassword,
-            });
-        await user.save();
+//         const user = new User({
+//             username,
+//             email,
+//             password: hasheedPassword,
+//             });
+//         await user.save();
 
-        res.send("Registration successful!");
+//         res.send("Registration successful!");
 
-    }catch(error) {
-        console.error(error);
-        res.status(500).send("Someting is Wrong");
-    } 
-});
+//     }catch(error) {
+//         console.error(error);
+//         res.status(500).send("Someting is Wrong");
+//     } 
+// });
 
 // post login form
 
-app.post("/login", async (req,res) => {
-    try {
-        const {email,password} = req.body;
-        const user = await User.findOne({email});
-        if(!user) {
-            return res.send("User not found")
-        }
+// app.post("/login", async (req,res) => {
+//     try {
+//         const {email,password} = req.body;
+//         const user = await User.findOne({email});
+//         if(!user) {
+//             return res.send("User not found")
+//         }
 
         // Password Match
-        const isMatch = await bcrypt.compare(password, user.password)
-        if(!isMatch) {
-            return res.status(404).send("Password does not match")
-        }
+//         const isMatch = await bcrypt.compare(password, user.password)
+//         if(!isMatch) {
+//             return res.status(404).send("Password does not match")
+//         }
 
-        res.redirect("/index");
+//         res.redirect("/index");
 
-    }catch(error){
-        console.error(error);
-        res.status(404).send("Login Failed");
-    }
-});
+//     }catch(error){
+//         console.error(error);
+//         res.status(404).send("Login Failed");
+//     }
+// });
 
 
 // Contact Form
