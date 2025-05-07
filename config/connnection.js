@@ -21,7 +21,7 @@
 
 const mongoose = require('mongoose');
 
-const dB = "mongodb+srv://dhirendrabam12345:%40Dhirendra123@portfolio.f9wmcck.mongodb.net/?retryWrites=true&w=majority&portfolio";
+const dB = "mongodb+srv://dhirendrabam12345:%40Dhirendra123@portfolio.f9wmcck.mongodb.net/?retryWrites=true&w=majority&appName=portfolio";
 mongoose.connect(dB).then(() => {
     console.log('Connection Sucussfully');
 }).catch((error) => {
