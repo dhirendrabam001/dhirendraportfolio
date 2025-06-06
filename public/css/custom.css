@@ -143,13 +143,14 @@
     width: 80%;
     height: 60vh;
     bottom: 80px;
-    right: 16%;
+    /* right: 12%; */
+    margin-left: 10%;
     transform: none;
     border-radius: 15px;
   }
   .chatbot-container {
     bottom: 20px;
-    right: 15%;
+    right: 10%;
     position: fixed;
   }
 
