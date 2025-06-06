@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <title>About Section</title>
+</head>
+
+<body>
+  <!-- Navbar Section Start -->
+  <nav class="navbar navbar-expand-lg shadow">
+    <div class="container">
+      <div class="logo">
+        <img src="/img/logoimg.png" alt="logo" width="150px" height="50px">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars bars-incos"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar-btn">
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#talkform">Let's Talk</button>
+        </div>
+          <!-- support model start -->
+           <div class="modal fade" id="talkform" aria-labelledby="#talklabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered shadow">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="title" id="talklabel">Support <span class="text-danger">Team</span></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="/supportform" method="post">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username" name="username">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your Email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Your Subject" name="subject">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="yourname1" aria-describedby="emailHelp" placeholder="Your Name" name="yourname1">
+                    </div>
+                    <div class="mb-3">
+                      <input type="number" class="form-control" id="yournumber" aria-describedby="emailHelp" placeholder="Your Number" name="yournumber">
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="messagesupport" name="messagesupport" rows="5" placeholder="Leave A Comment Here...."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+           </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar Section End -->
+   <!-- bg section start -->
+   <section class="bg-main">
+   </section>
+
+  <!-- bg section End -->
+
+     <!-- About-section-2 start -->
+  <section class="about-section-2 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 order-last order-lg-first">
+          <div class="about-section-content-left">
+            <img src="/img/portimg.jpg" alt="about-me" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="about-section-content ms-3 mb-3 mt-3">
+            <span class="text-primary fs-6 text-capitalize">Let me introduce myself!</span>
+            <h2 class="fs-1 fw-bold my-2">About <span class="text-danger fw-bold">Me</span></h2>
+            <h4 class="fs-3 text-dark">A story of hardwork and <span class="text-danger fw-bold">preseverance.</span>
+            </h4>
+            <p class="text-secondary">I started my journey with limited resources, a slow laptop, and big dreams. Coding
+              late nights after classes, fixing bugs I didn’t understand, and learning through trial and error I never
+              gave up. Every challenge became a lesson, every failure a step forward. From those humble beginnings in
+              Nepal to building real-world projects in Chandigarh, my growth as a frontend developer is powered by
+              passion, persistence, and the belief that hard work always pays off.</p>
+
+            <!-- education,experience and skills card -->
+            <nav>
+              <div class="nav nav-tabs mb-3 border-0" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills"
+                  type="button" role="tab" aria-controls="nav-skills" aria-selected="true">Skills</button>
+                <button class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience"
+                  type="button" role="tab" aria-controls="nav-experience" aria-selected="false">Experience</button>
+                <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education"
+                  type="button" role="tab" aria-controls="nav-education" aria-selected="false">Education</button>
+              </div>
+            </nav>
+            <div class="tab-content p-2" id="nav-tabContent">
+              <!-- Skills Tab -->
+              <div class="tab-pane fade active show content-info-1" id="nav-skills" role="tabpanel"
+                aria-labelledby="nav-skills-tab">
+                <h2 class="fs-5 fw-bold">Frontend <span class="fw-bold text-danger">Developer</span></h2>
+                <p class="">HTML, CSS, JavaScript And Bootstrap 5</p>
+                <h2 class="fs-5 fw-bold">Backend <span class="fw-bold text-danger">Developer</span></h2>
+                <p class="">NodeJs ExpressJs And MongooseDB</p>
+                <h2 class="fs-5 fw-bold">SEO <span class="fw-bold text-danger">Optimization</span></h2>
+                <p>Off Pages And Backlink</p>
+              </div>
+              <!-- Experience Info -->
+              <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
+                <div class="experience-info">
+                  <ul class="">
+                    <li><span class="">Jan 2025 - Current</span></li>
+                    <p>Frontend development internship 3 month at Amaze Technosoft Pvt</p>
+                    <li><span>Nov 2024 - Jan 2025</span></li>
+                    <p>SEO optimization at Vishyat Technologies off page and backlinking</p>
+                    <li><span>April 2023 - Oct 2024</span></li>
+                    <p>Computer Operator and Data Entry at Nabin Mobile Gallery</p>
+                  </ul>
+                </div>
+              </div>
+              <!-- Education Info -->
+              <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+                <div class="education-info">
+                  <ul>
+                    <li><span>Aug 2024 - Current</span></li>
+                    <p>Bachelor Information Technology From Vidya Jyoti Eduversity</p>
+                    <li><span>Feb 2018 - Aug 2022</span></li>
+                    <p class="text-capitalize">Diploma in computer engineering from nepal polytechnic institute</p>
+                    <li><span>April 2015 - Completed</span></li>
+                    <p>SEE Completed From Joraghat Secondary School</p>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn-about my-3">
+              <a href="#" class="btnn text-decoration-none">
+                <span class="glow-bg"></span>
+                Hire Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About-section-2 End -->
+
+     <!-- Contact Section Start -->
+  <section class="contact-main py-4 d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-4 col-lg-4 contact-info-right text-white mt-5">
+          <span class="text-danger my-3 ms-3">GET IN TOUCH WITH ME!</span>
+              <div class="footer-info mt-3 d-flex align-items-center">
+                <div class="icon-img">
+                  <img src="/img/map.gif" width="70px" height="70px" alt="map">
+                </div>
+                <div class="map-text ms-3 mt-3">
+                  <h5>Adress</h5>
+                  <p>Chandigarh, India</p>
+                </div>
+              </div>
+
+              <div class="footer-info mt-3 d-flex align-items-center">
+                <div class="icon-img">
+                  <img src="/img/Call Phone 3D Animated Icon.gif" width="70px" height="70px" alt="map">
+                </div>
+                <div class="map-text ms-3 mt-3">
+                  <h5>Call Us</h5>
+                  <p>+9184844323</p>
+                </div>
+              </div>
+
+              <div class="footer-info mt-3 d-flex align-items-center">
+                <div class="icon-img">
+                  <img src="img/Email Marketing 3D Animated Icon.gif" width="70px" height="70px" alt="map">
+                </div>
+                <div class="map-text ms-3 mt-3">
+                  <h5>Email Us</h5>
+                  <p>dhirendrabam12345@gmail.com</p>
+                </div>
+              </div>
+
+
+        </div>
+        <div class="col-md-4 col-lg-4 contact-info mt-3">
+          <h3 class="mx-2 my-3">Contact Me</h3>
+          <form action="/contact" method="post">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="yourname" placeholder="Your Name" name="yourname">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Your Subject" name="yoursubject">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+            </div>
+            <div class="btn-form text-center">
+              <button type="submit" class="btn btn-outline-danger text-white w-100">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4 col-lg-4 new-letter text-white">
+          <div class="mb-2 mt-3 ms-2">
+            <h4>Newsletter</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, nesciunt. Iste omnis quo sunt voluptatum modi fugiat, corporis atque.</p>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email Address" aria-describedby="emailHelp">
+            <div class="btn-letter text-center my-4">
+              <button type="submit" class="btn btn-outline-danger text-white w-100">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section End -->
+
+   <!-- Footer Section Start -->
+   <section class="footer-main py-4">
+    <div class="container">
+      <div class="social-media d-flex justify-content-center align-items-center gap-4">
+        <a href="https://www.facebook.com/people/Dhirendra-Bam-ThaQurii/pfbid0feKYKQNKnk8kEFRXKzCqqA7PFeFTurEy9A8oTjHiiHEYwqP6KypzzibkFNZJCjh9l/?mibextid=wwXIfr&rdid=fzR2epvmy5D9WvLB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19KjSvFU31%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/people/Dhirendra-Bam-ThaQurii/pfbid0feKYKQNKnk8kEFRXKzCqqA7PFeFTurEy9A8oTjHiiHEYwqP6KypzzibkFNZJCjh9l/?mibextid=wwXIfr&rdid=fzR2epvmy5D9WvLB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19KjSvFU31%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="https://www.linkedin.com/in/dhirendrabam001/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ig_dhirendra01/?igsh=bWU2bGkxYXY2Ymh3&utm_source=qr#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/dhirendrabam001" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="tel:+916284844323" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="mb-0 text-center my-3 mt-5 fs-5 text-dark">&copy; 2025 Dhirendra Bam. All rights reserved.</p>
+      <p class="text-center my-2 text-danger">Thank You For Visiting Me.</p>
+
+    </div>
+   </section>
+
+  <!-- Footer Section End -->
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <!-- Typing cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scrollrevel cdn -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+      integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
